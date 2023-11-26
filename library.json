@@ -1,0 +1,17 @@
+{
+    "name": "HID",
+    "keywords": "hid, esp32",
+    "description": "A library to use HID interface of ESP32-S3 easily",
+    "authors":
+	{
+		"name": "Andreock",
+		"maintainer": true
+	},
+	"repository":
+    {
+        "type": "git",
+        "url": "https://github.com/CapibaraZero/HID.git"
+    },
+    "version": "1.0",
+    "frameworks": "arduino"
+}
