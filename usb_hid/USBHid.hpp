@@ -22,15 +22,15 @@
 #include "USBHIDKeyboard.h"
 #include "USBHIDMouse.h"
 
-class Hid
+class USBHid
 {
 private:
   USBHIDKeyboard Keyboard;
   USBHIDMouse Mouse;
 
 public:
-  Hid(/* args */);
-  ~Hid();
+  USBHid(/* args */);
+  ~USBHid();
 
   void print_char(char char_to_print);
 

@@ -1,0 +1,3 @@
+#define KEYBOARD_ID 0x01
+#define MEDIA_KEYS_ID 0x02
+#define MOUSE_ID 0x03

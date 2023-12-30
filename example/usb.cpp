@@ -1,7 +1,7 @@
 #include <Arduino.h>
-#include "hid.hpp"
+#include "usb_hid/USBHid.hpp"
 
-Hid hid = Hid();
+USBHid hid = USBHid();
 
 void setup()
 {
