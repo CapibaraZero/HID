@@ -42,5 +42,9 @@ public:
 
   void mouse_set_coordinate(int x, int y, int wheel_pos);
   void mouse_set_coordinate(int x, int y, int wheel_pos, int pan);
+  void press(uint8_t key) { Keyboard.press(key); }
+  void press_raw(uint8_t key) { Keyboard.pressRaw(key); }
+  void release(uint8_t key) { Keyboard.release(key); }
+  void release_all() { Keyboard.releaseAll(); }
 };
 #endif
