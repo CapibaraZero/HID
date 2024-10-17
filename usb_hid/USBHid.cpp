@@ -21,7 +21,12 @@ void USBHid::end() {
 void USBHid::print_char(char char_to_print) { Keyboard.print(char_to_print); }
 
 void USBHid::print_string(std::string string_to_print) {
-    Keyboard.print(string_to_print.c_str());
+    for (char c : string_to_print) {
+        Keyboard.print(c);
+        if(jitter_enabled)
+            delay(random(0, jitter_max));
+    }
+    
 }
 
 void USBHid::mouse_click() { Mouse.click(); }

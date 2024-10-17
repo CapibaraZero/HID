@@ -27,7 +27,8 @@ class USBHid {
    private:
     USBHIDKeyboard Keyboard;
     USBHIDMouse Mouse;
-
+    int jitter_max = 20;
+    bool jitter_enabled = false;
    public:
     USBHid(/* args */);
     ~USBHid();
@@ -48,5 +49,11 @@ class USBHid {
     void release_all() { Keyboard.releaseAll(); }
     void begin();
     void end();
+    void set_jitter_status(bool status) {
+        jitter_enabled = status;
+    }
+    void set_jitter_level(int level) {
+        jitter_max = level;
+    }
 };
 #endif
