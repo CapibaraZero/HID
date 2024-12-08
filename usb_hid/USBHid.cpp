@@ -68,6 +68,8 @@ void USBHid::begin(const char *layout) {
     Keyboard.begin(KeyboardLayout_hu_HU);
   else  // en_US and others
     Keyboard.begin();
+  
+  Mouse.begin();
 }
 
 void USBHid::end() {
