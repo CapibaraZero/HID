@@ -15,6 +15,6 @@
     "version": "1.2",
     "frameworks": "arduino",
     "dependencies": {
-        "USB": "*"
+        "USB": "https://github.com/CapibaraZero/USB.git"
     }
 }
