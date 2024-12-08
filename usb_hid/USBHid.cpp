@@ -48,6 +48,8 @@ void USBHid::begin(KeyboardLayout layout) {
 }
 
 void USBHid::begin(const char *layout) {
+  USB.begin();
+  
   if(strcmp("de_DE", layout) == 0)
     Keyboard.begin(KeyboardLayout_de_DE);
   else if(strcmp("es_ES", layout) == 0)
@@ -70,6 +72,7 @@ void USBHid::begin(const char *layout) {
     Keyboard.begin();
   
   Mouse.begin();
+  initialized = true;
 }
 
 void USBHid::end() {
