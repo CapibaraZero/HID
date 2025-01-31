@@ -1,3 +1,4 @@
+#if CONFIG_TINYUSB_HID_ENABLED
 #include "USBHid.hpp"
 #include <string>
 
@@ -117,3 +118,4 @@ void USBHid::mouse_set_coordinate(int x, int y, int wheel_pos, int pan) {
     initialize_hid();
   Mouse.move(x, y, wheel_pos, pan);
 }
+#endif

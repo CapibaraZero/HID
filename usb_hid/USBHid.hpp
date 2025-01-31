@@ -15,6 +15,7 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
+#if CONFIG_TINYUSB_HID_ENABLED
 #ifndef HID_H
 #define HID_H
 
@@ -78,4 +79,5 @@ class USBHid {
   void set_jitter_status(bool status) { jitter_enabled = status; }
   void set_jitter_level(int level) { jitter_max = level; }
 };
+#endif
 #endif
