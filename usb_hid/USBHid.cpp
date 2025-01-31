@@ -1,5 +1,6 @@
-#if CONFIG_TINYUSB_HID_ENABLED
 #include "USBHid.hpp"
+
+#if CONFIG_TINYUSB_HID_ENABLED
 #include <string>
 
 #include "Arduino.h"
